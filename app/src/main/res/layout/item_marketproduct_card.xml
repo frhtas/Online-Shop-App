@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_marketproduct_card"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="6dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:longClickable="true"
+    android:padding="5dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMarketProduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_10"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text="Ürün İsmi:"
+                    android:textColor="@color/colorBackground_app"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_marketProductName"
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_12"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text="Ürün Fiyatı:"
+                    android:textColor="@color/colorBackground_app"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editText_marketProductPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_11"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text="Ürün Miktarı:"
+                    android:textColor="@color/colorBackground_app"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.shawnlin.numberpicker.NumberPicker
+                    android:id="@+id/numberPicker_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_weight="1"
+                    app:np_dividerColor="@color/colorBackground"
+                    app:np_dividerThickness="1dp"
+                    app:np_orientation="horizontal"
+                    app:np_selectedTextColor="@color/colorBackground_app"
+                    app:np_selectedTextSize="16sp"
+                    app:np_textColor="#222222"
+                    app:np_textSize="12sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView_marketProductImage"
+                android:layout_width="120dp"
+                android:layout_height="79dp"
+                android:layout_gravity="center|top"
+                app:srcCompat="@drawable/ic_action_username" />
+
+            <Button
+                android:id="@+id/button_updateMarketProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_button"
+                android:text="Güncelle"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

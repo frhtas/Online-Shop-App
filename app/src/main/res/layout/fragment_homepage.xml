@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground_v2"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/colorBackground_app"
+    android:gravity="center|start">
+
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/applogo"
+        app:srcCompat="@drawable/image_logo" />
+
+    <TextView
+        android:id="@+id/textView_logo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/bakkal"
+        android:textColor="#ECD1DC"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/editText_search"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="@drawable/rounded_search"
+            android:drawableEnd="@drawable/ic_search"
+            android:ems="10"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:paddingEnd="2dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/edittext_search_color"
+            android:textSize="20sp" />
+</LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_product"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

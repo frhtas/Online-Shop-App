@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".LoginActivity">
+
+
+    <Button
+        android:id="@+id/button_login_market"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="141dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/giris_yap"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_password_market" />
+
+    <EditText
+        android:id="@+id/editText_username_market"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableStart="@drawable/ic_action_username"
+        android:ems="10"
+        android:hint="@string/username"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText_password_market"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/editText_password_market"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableStart="@drawable/ic_action_password"
+        android:ems="10"
+        android:hint="@string/password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_login_market"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_username_market" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginBottom="61dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/applogo"
+        app:layout_constraintBottom_toTopOf="@+id/editText_username_market"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bakkal_logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

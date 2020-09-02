@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorBackground_app"
+        android:gravity="center|start">
+
+        <ImageView
+            android:id="@+id/imageView_logo"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/applogo"
+            app:srcCompat="@drawable/image_logo" />
+
+        <TextView
+            android:id="@+id/textView_logo"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:text="Raporlar"
+            android:textColor="#ECD1DC"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_dayReports"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="200dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button_oddfromcart"
+            android:text="GÜNLÜK\nRAPORLAR"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_customerReports"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="200dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button_addtocart"
+            android:text="MÜŞTERİ\nGÖRÜŞLERİ"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

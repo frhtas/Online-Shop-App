@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">bakkAL</string>
+    <string name="giris_yap">Giriş Yap</string>
+    <string name="username">Kullanıcı Adı</string>
+    <string name="password">Şifre</string>
+    <string name="signup">Henüz hesabın yok mu? Kayıt ol.</string>
+    <string name="customer">MÜŞTERİ</string>
+    <string name="market">MARKET</string>
+    <string name="phone">Telefon Numarası</string>
+    <string name="e_mail">E-mail</string>
+    <string name="bdate">Doğum Tarihi</string>
+    <string name="addres">Adres</string>
+    <string name="sign_up">Kayıt Ol</string>
+    <string name="name">Ad Soyad</string>
+    <string name="home_page">Ana Sayfa</string>
+    <string name="sepetim">Sepetim</string>
+    <string name="reports">Görüşler</string>
+    <string name="profile">Profilim</string>
+    <string name="applogo">appLogo</string>
+    <string name="bakkal">bakkAL</string>
+    <string name="title_activity_reports_fragment">ReportsFragment</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+</resources>
